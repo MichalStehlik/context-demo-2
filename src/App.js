@@ -10,7 +10,7 @@ function App() {
   const [theme, setTheme] = useState("light");
   return (
     <div className="App">
-      <ThemeContext.Provider value={{theme: theme}}>     
+      <ThemeContext.Provider value={{theme: theme, setTheme: setTheme}}>     
         <Container>
           <button onClick={e=>setTheme("light")}>Light</button>
           <button onClick={e=>setTheme("dark")}>Dark</button>
